@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root, .app {
+
+}
+
+// ############################ HOME ##########################
+.home {
+  display: flex;
+  flex-direction: column;
+  .home-top, .home-bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+    .store {
+      border: 1px solid black;
+      box-sizing: border-box;
+      background-size: cover;
+      height: 50%;
+      width: 50%;
+
+      .overlay{
+        position: relative;
+        background-color:rgba(0,0,0,0.5);
+        height:100%;
+        width:100%;
+        transition-duration: 0.2s;
+        div {
+          text-align: center;
+          position:absolute;
+          top:50%;
+          left:50%;
+          color:white !important;
+          transform:translate(-50%,-50%);
+        }
+      }
+      div:hover{
+        background-color:rgba(0,0,0,0.0);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+// ############################ HEADER ##########################
+.header-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  h1 {
+    color: white;
+  }
+}
+
+.darken{
+  background-color: rgba(0,0,0,0.3);
+  height: 100vh;
+}
