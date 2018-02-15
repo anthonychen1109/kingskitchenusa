@@ -13,7 +13,7 @@ class About extends Component {
 
   render () {
     return (
-      <div className="about container">
+      <div id="about" className="about container">
       <div className="about-img" style={{backgroundImage: "url(" + Img1 + ")"}}>
         </div>
         <div className="about-text">

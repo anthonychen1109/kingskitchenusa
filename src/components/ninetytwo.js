@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 // Components
+import Navbar from './navbar';
 import Header from './header';
 import About from './about';
 import Menu from './menu';
@@ -22,9 +23,43 @@ const sunday = "7:00 AM to 10:30 PM";
 const phone = "212-966-7288";
 
 class NinetyTwo extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    };
+    this.dropDownMenu = this.dropDownMenu.bind(this);
+  }
+
+  dropDownMenu() {
+    let x = document.getElementById('dropDownClick');
+    if (x.className === 'navbar-list') {
+      x.className = ' responsive animated fadeInDown';
+    } else {
+      x.className = 'navbar-list';
+    }
+  }
   render() {
     return (
       <div>
+        <nav className="fixed-navbar">
+          <ul id="dropDownClick" className="navbar-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="">Online Order</a></li>
+            <li className="nav-logo"><a href="/">King's Kitchen</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li className="dropDownIcon">
+              <a
+                href="javascript:void(0)"
+                onClick={this.dropDownMenu}
+                >
+                &#9776;
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <Navbar />
         <Header headerImage={header_image} />
         <About />
         <Menu />

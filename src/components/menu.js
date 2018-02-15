@@ -53,7 +53,7 @@ class Menu extends Component {
   render() {
     return (
       <div className="menu-bg">
-      <div className="menu container">
+      <div id="menu" className="menu container">
         <div className="menu-container">
           <div className="menu-nav">
             <h1>Menu</h1>
