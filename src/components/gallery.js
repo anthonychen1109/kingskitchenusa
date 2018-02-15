@@ -15,7 +15,17 @@ const images = [
   '8.jpg',
   '9.jpg',
   '10.jpg',
-  '11.jpg'
+  '11.jpg',
+  '11.png',
+  '12.png',
+  '13.png',
+  '14.png',
+  '15.png',
+  '16.png',
+  '17.png',
+  '18.jpg',
+  '19.jpeg',
+  '20.JPG'
 ]
 
 class Gallery extends Component {
