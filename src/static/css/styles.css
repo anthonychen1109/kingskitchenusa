@@ -25,14 +25,14 @@
         transition-duration: 0.2s; }
         .home .home-top .store .overlay div, .home .home-bottom .store .overlay div {
           text-align: center;
+          color: white !important;
           position: absolute;
           top: 50%;
           left: 50%;
-          color: white !important;
           transform: translate(-50%, -50%); }
-      .home .home-top .store div:hover, .home .home-bottom .store div:hover {
-        background-color: rgba(0, 0, 0, 0);
-        cursor: pointer; }
+          .home .home-top .store .overlay div:hover, .home .home-bottom .store .overlay div:hover {
+            background-color: rgba(0, 0, 0, 0);
+            cursor: pointer; }
 
 .header-logo {
   position: absolute;

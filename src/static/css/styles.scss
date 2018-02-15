@@ -3,8 +3,11 @@
   padding: 0;
 }
 
-#root, .app {
-
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 // ############################ HOME ##########################
@@ -32,16 +35,13 @@
         transition-duration: 0.2s;
         div {
           text-align: center;
-          position:absolute;
-          top:50%;
-          left:50%;
           color:white !important;
-          transform:translate(-50%,-50%);
+          @include center;
+          &:hover {
+            background-color:rgba(0,0,0,0.0);
+            cursor: pointer;
+          }
         }
-      }
-      div:hover{
-        background-color:rgba(0,0,0,0.0);
-        cursor: pointer;
       }
     }
   }
@@ -50,10 +50,7 @@
 
 // ############################ HEADER ##########################
 .header-logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  @include center;
   h1 {
     color: white;
   }
