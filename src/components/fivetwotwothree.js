@@ -1,17 +1,48 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 // Components
 import Header from './header';
+import About from './about';
+import Menu from './menu';
+import Gallery from './gallery';
+import Contact from './contact';
 
 // Images
 import header_image from '../static/images/5223.JPG';
 
-const Fivetwotwothree = () => {
-  return (
-    <div>
-      <Header headerImage={header_image} />
-    </div>
-  )
+const add1 = "5223 8th Avenue";
+const add2 = "Brooklyn NY, 11219";
+const mon = "7:00 AM to 2:00 PM";
+const tues = "7:00 AM to 2:00 PM";
+const wed = "7:00 AM to 2:00 PM";
+const thurs = "7:00 AM to 2:00 PM";
+const fri = "7:00 AM to 2:00 PM";
+const sat = "7:00 AM to 2:00 PM";
+const sunday = "7:00 AM to 2:00 PM";
+const phone = "718-853-1288";
+
+class Fivetwotwothree extends Component {
+  render() {
+    return (
+      <div>
+        <Header headerImage={header_image} />
+        <About />
+        <Menu />
+        <Gallery />
+          <Contact
+            add1={add1}
+            add2={add2}
+            mon={mon}
+            tues={tues}
+            wed={wed}
+            thurs={thurs}
+            fri={fri}
+            sat={sat}
+            sunday={sunday}
+            phone={phone}/>
+      </div>
+    )
+  }
 }
 
 export default Fivetwotwothree;

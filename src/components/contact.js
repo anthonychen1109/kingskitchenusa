@@ -1,7 +1,7 @@
 import React from 'react';
 import Iframe from 'react-iframe';
 
-const Contact = () =>
+const Contact = (props) =>
   <div>
     <div id="contact" className="contact">
       <div className="contact-location container">
@@ -17,33 +17,33 @@ const Contact = () =>
           <br />
           <p>
             <strong>
-              92 E Broadway
+              {props.add1}
             <br />
-              New York NY, 10022
+              {props.add2}
             </strong>
           </p>
           <br />
           <p>
             <strong>PHONE</strong>
             <br />
-              212-966-7288
+              {props.phone}
           </p>
           <br />
           <p><strong>HOURS</strong></p>
           <p className="hours">
-            Monday 7:00 AM to 10:30 PM
+            Monday {props.mon}
             <br />
-            Tuesday 7:00 AM to 10:30 PM
+            Tuesday {props.tues}
             <br />
-            Wednesday 7:00 AM to 10:30 PM
+            Wednesday {props.wed}
             <br />
-            Thursday 7:00 AM to 10:30 PM
+            Thursday {props.thurs}
             <br />
-            Friday 7:00 AM to 10:30 PM
+            Friday {props.fri}
             <br />
-            Saturday 7:00 AM to 10:30 PM
+            Saturday {props.sat}
             <br />
-            Sunday 7:00 AM to 10:30 PM
+            Sunday {props.sunday}
           </p>
         </div>
       </div>
