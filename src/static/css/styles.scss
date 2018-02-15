@@ -197,12 +197,41 @@ $margin-top: 40px;
 .item-price {
   text-align: right;
 }
+
+// ############################ GALLERY ##########################
+.gallery {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;;
+  margin-top: $margin-top;
+  h1 {
+    padding-bottom: 20px;
+    text-align: center;
+  }
+}
+
+.grid-item {
+  width:33.33%;
+  img {
+    padding: 3px;
+    max-width: 100%;
+    @media only screen and (max-width: 800px) {
+      padding: 1px;
+    }
+  }
+}
+
+.modal-img {
+  max-width: 100%;
+}
+
 // ############################ CONTACT ##########################
 .contact {
   // background: linear-gradient(to bottom right, #B2FF59, #CCFF90);
-  background-image: url('../images/7.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-image: url('../images/7.jpg');
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  background-color: #FF6D00;
   margin-top: 40px;
   padding-bottom: 40px;
   padding-top: 40px;

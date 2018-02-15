@@ -148,10 +148,29 @@
 .item-price {
   text-align: right; }
 
+.gallery {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  margin-top: 40px; }
+  .gallery h1 {
+    padding-bottom: 20px;
+    text-align: center; }
+
+.grid-item {
+  width: 33.33%; }
+  .grid-item img {
+    padding: 3px;
+    max-width: 100%; }
+    @media only screen and (max-width: 800px) {
+      .grid-item img {
+        padding: 1px; } }
+
+.modal-img {
+  max-width: 100%; }
+
 .contact {
-  background-image: url("../images/7.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #FF6D00;
   margin-top: 40px;
   padding-bottom: 40px;
   padding-top: 40px; }
