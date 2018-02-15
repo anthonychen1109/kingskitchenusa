@@ -10,6 +10,15 @@
   transform: translate(-50%, -50%);
 }
 
+@mixin carousel {
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 300px;
+}
+
+$header-color: white;
+$margin-top: 40px;
+
 // ############################ HOME ##########################
 .home {
   display: flex;
@@ -37,10 +46,10 @@
           text-align: center;
           color:white !important;
           @include center;
-          &:hover {
-            background-color:rgba(0,0,0,0.0);
-            cursor: pointer;
-          }
+        }
+        div:hover {
+          background-color:rgba(0,0,0,0.0);
+          cursor: pointer;
         }
       }
     }
@@ -52,11 +61,182 @@
 .header-logo {
   @include center;
   h1 {
-    color: white;
+    color: $header-color;
   }
 }
 
 .darken{
   background-color: rgba(0,0,0,0.3);
   height: 100vh;
+}
+
+// ############################ ABOUT ##########################
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: $margin-top;
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+    .about-text {
+      order: 1;
+    }
+    .about-img {
+      order: 2;
+    }
+  }
+  .about-img {
+    @include carousel;
+    width: 100%;
+    img {
+      max-width: 100%;
+    }
+  }
+  .about-text {
+    h1 {
+      text-align: center;
+    }
+    p {
+      padding: 20px;
+    }
+  }
+}
+
+// ############################ CAROUSEL ##########################
+.carousel {
+  margin-top: $margin-top;
+  .carousel-item-1 {
+    background-image: url('../images/3.jpg');
+    @include carousel;
+  }
+  .carousel-item-2 {
+    background-image: url('../images/5.jpg');
+    @include carousel;
+  }
+  .carousel-item-3 {
+    background-image: url('../images/7.jpg');
+    @include carousel;
+  }
+}
+
+// ############################ MENU ##########################
+.menu-bg {
+  background-image: url("../images/menu.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+.menu {
+  margin-top: $margin-top;
+  h1 {
+    padding-top: 20px;
+  }
+  @media only screen and (max-width: 800px) {
+    background-image: url("../images/menu.png");
+    background-size: cover;
+    background-position: calc(100% - 10%) calc(100% - 10px);
+    min-height: 100vh;
+    h1 {
+      text-align: center;
+    }
+  }
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-evenly;
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+    .menu-nav {
+      ul {
+        text-align: center;
+      }
+    }
+  }
+  .menu-nav {
+    margin-left: 5%;
+    width: 100%;
+    ul {
+      li {
+        color: blue;
+        list-style: none;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.menu-display {
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin-right: 5%;
+  max-width: 50%;
+  @media only screen and (max-width: 800px) {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+
+.item-grid {
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  margin-top: 20px;
+  // grid-template-columns:1fr 1fr 1fr; in case they want chinese items
+}
+
+.item-grid-drink {
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  margin-top: 20px;
+  div:not(:first-child) {
+    text-align: right;
+  }
+}
+
+.item-price {
+  text-align: right;
+}
+// ############################ CONTACT ##########################
+.contact {
+  // background: linear-gradient(to bottom right, #B2FF59, #CCFF90);
+  background-image: url('../images/7.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 40px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.contact-info {
+  div {
+    background-color: white;
+    margin: 0 auto;
+    margin-top: -120px;
+    position: relative;
+    width: 50%;
+    z-index: 999;
+    transition: .3s;
+
+    @media only screen and (max-width: 800px) {
+      margin-top: 10px;
+      width: 100%;
+    }
+    h2 {
+      padding-top: 20px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: .8em;
+      text-align: center;
+    }
+    .hours {
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.contact-header {
+  // font-family: $body-font;
 }
