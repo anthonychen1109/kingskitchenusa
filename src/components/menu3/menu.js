@@ -57,17 +57,17 @@ class Menu extends Component {
         <div className="menu-container">
           <div className="menu-nav">
             <h1>Menu</h1>
-            <ul>
-              <li onClick={() => this.setItem('special')}>Chef Special</li>
-              <li onClick={() => this.setItem('congee')}>Congee</li>
-              <li onClick={() => this.setItem('fried')}>Fried Fun/Noodle/Rice</li>
-              <li onClick={() => this.setItem('noodle')}>Noodle in Soup</li>
-              <li onClick={() => this.setItem('roasted')}>Roasted Meat on Rice</li>
-              <li onClick={() => this.setItem('appetizer')}>Appetizers</li>
-              <li onClick={() => this.setItem('beverage')}>Beverages</li>
-              <li onClick={() => this.setItem('riceroll')}>Steamed Rice Rolls</li>
-              <li onClick={() => this.setItem('ricecasserole')}>Rice Casserole</li>
-            </ul>
+              <ul>
+                <li onClick={() => this.setItem('special')}><span>Chef Special</span></li>
+                <li onClick={() => this.setItem('congee')}><span>Congee</span></li>
+                <li onClick={() => this.setItem('fried')}><span>Fried Fun/Noodle/Rice</span></li>
+                <li onClick={() => this.setItem('noodle')}><span>Noodle in Soup</span></li>
+                <li onClick={() => this.setItem('roasted')}><span>Roasted Meat on Rice</span></li>
+                <li onClick={() => this.setItem('appetizer')}><span>Appetizers</span></li>
+                <li onClick={() => this.setItem('beverage')}><span>Beverages</span></li>
+                <li onClick={() => this.setItem('riceroll')}><span>Steamed Rice Rolls</span></li>
+                <li onClick={() => this.setItem('ricecasserole')}><span>Rice Casserole</span></li>
+              </ul>
           </div>
           <div className="menu-display">
             {this.renderItem(this.state.currentItem)}
