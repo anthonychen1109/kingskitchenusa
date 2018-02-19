@@ -206,6 +206,8 @@ $margin-top: 40px;
 .menu-container {
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 40px;
+  padding-top: 40px;
   @media only screen and (max-width: 800px) {
     flex-direction: column;
     .menu-nav {
@@ -219,10 +221,18 @@ $margin-top: 40px;
     width: 100%;
     ul {
       li {
-        color: blue;
+        color: gray;
         list-style: none;
         &:hover {
           cursor: pointer;
+        }
+        span {
+          font-size: 1.5em;
+          &:hover {
+            border-bottom: 2px solid orange;
+            color: black;
+            transition: color .2s ease-in-out;
+          }
         }
       }
     }

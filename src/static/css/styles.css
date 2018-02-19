@@ -156,7 +156,9 @@
 
 .menu-container {
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  padding-bottom: 40px;
+  padding-top: 40px; }
   @media only screen and (max-width: 800px) {
     .menu-container {
       flex-direction: column; }
@@ -166,10 +168,16 @@
     margin-left: 5%;
     width: 100%; }
     .menu-container .menu-nav ul li {
-      color: blue;
+      color: gray;
       list-style: none; }
       .menu-container .menu-nav ul li:hover {
         cursor: pointer; }
+      .menu-container .menu-nav ul li span {
+        font-size: 1.5em; }
+        .menu-container .menu-nav ul li span:hover {
+          border-bottom: 2px solid orange;
+          color: black;
+          transition: color .2s ease-in-out; }
 
 .menu-display {
   padding-bottom: 20px;
