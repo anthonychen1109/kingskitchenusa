@@ -53,9 +53,9 @@ class Menu extends Component {
   render() {
     return (
       <div className="menu-bg">
-      <div id="menu" className="menu container">
+      <div className="menu container">
         <div className="menu-container">
-          <div className="menu-nav">
+          <div id="menu" className="menu-nav">
             <h1>Menu</h1>
             <ul>
               <li onClick={() => this.setItem('special')}><span>Chef Special</span></li>
