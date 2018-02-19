@@ -226,7 +226,7 @@
   opacity: .7; }
 
 .modal-img {
-  max-width: 100%; }
+  max-width: 300px; }
 
 .contact {
   background-image: url("../images/contactbg.jpg");
