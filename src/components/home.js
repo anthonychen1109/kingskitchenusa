@@ -23,7 +23,7 @@ const Home = () => {
           <a href="/2051 86 St">
           <div className="overlay">
             <div>
-              <h1>2051 86 St.</h1>
+              <h1>2051 86&nbsp;St.</h1>
             </div>
           </div>
           </a>
@@ -32,7 +32,7 @@ const Home = () => {
           <a href="/5223 8th Ave">
           <div className="overlay">
             <div>
-              <h1>5223 8th Ave.</h1>
+              <h1>5223 8th&nbsp;Ave.</h1>
             </div>
           </div>
         </a>
