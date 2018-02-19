@@ -12,7 +12,6 @@ class Navbar extends Component {
     return (
       <div className="navbar animated fadeInDown hide">
         <ul className="navbar-list">
-          <li><a href="#about">About</a></li>
           <li><a href="#menu">Menu</a></li>
           <li><a href="">Online Order</a></li>
           <li className="nav-logo"><a href="/">King's Kitchen</a></li>

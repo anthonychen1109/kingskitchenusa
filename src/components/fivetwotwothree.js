@@ -29,6 +29,15 @@ class Fivetwotwothree extends Component {
 
     };
     this.dropDownMenu = this.dropDownMenu.bind(this);
+    this.toTop = this.toTop.bind(this);
+  }
+
+  toTop() {
+  var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+    if (currentScroll > 0) {
+     window.requestAnimationFrame(this.toTop);
+     window.scrollTo (0,currentScroll - (currentScroll/5));
+    }
   }
 
   dropDownMenu() {
@@ -42,9 +51,14 @@ class Fivetwotwothree extends Component {
   render() {
     return (
       <div>
+        <button
+          className="up-btn btn btn-secdonary"
+          onClick={this.toTop}
+          >
+            &#9650;
+        </button>
         <nav className="fixed-navbar">
           <ul id="dropDownClick" className="navbar-list">
-            <li><a href="#about">About</a></li>
             <li><a href="#menu">Menu</a></li>
             <li><a href="">Online Order</a></li>
             <li className="nav-logo"><a href="/">King's Kitchen</a></li>
