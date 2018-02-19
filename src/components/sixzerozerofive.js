@@ -23,6 +23,22 @@ const sunday = "7:00 AM to 10:00 PM";
 const phone = "718-853-1388";
 
 class Sixzerozerofive extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    };
+    this.dropDownMenu = this.dropDownMenu.bind(this);
+  }
+
+  dropDownMenu() {
+    let x = document.getElementById('dropDownClick');
+    if (x.className === 'navbar-list') {
+      x.className = ' responsive animated fadeInDown';
+    } else {
+      x.className = 'navbar-list';
+    }
+  }
   render() {
     return (
       <div>
