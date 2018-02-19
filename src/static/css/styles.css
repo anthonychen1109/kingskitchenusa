@@ -277,7 +277,7 @@
     font-size: .8em;
     text-align: center; }
   .contact-info div .hours {
-    padding-bottom: 10px; }
+    padding-bottom: 40px; }
 
 @media only screen and (max-width: 800px) {
   .fixed-navbar {
@@ -315,6 +315,9 @@
     ul.responsive a {
       color: black;
       text-decoration: none; }
+
+  .menu-container .menu-nav {
+    margin-left: 0; }
 
   .modal-img {
     max-width: 300px; } }

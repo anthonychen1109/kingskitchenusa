@@ -361,7 +361,7 @@
       text-align: center;
     }
     .hours {
-      padding-bottom: 10px;
+      padding-bottom: 40px;
     }
   }
 }
@@ -417,6 +417,10 @@
       color: black;
       text-decoration: none;
     }
+  }
+
+  .menu-container .menu-nav {
+    margin-left: 0;
   }
 
   .modal-img {
