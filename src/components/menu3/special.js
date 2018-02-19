@@ -20,16 +20,6 @@ const specials = [
     itemCH: "",
     itemEN: "Taiwan Braised Pork on Rice",
     price: "6.95"
-  },
-  {
-    itemCH: "",
-    itemEN: "Golden Sand Pork Chop Pasta or Rice",
-    price: "8.50"
-  },
-  {
-    itemCH: "",
-    itemEN: "Thai Style Jelly Fish",
-    price: "6.95"
   }
 ]
 

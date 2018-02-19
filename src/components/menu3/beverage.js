@@ -28,7 +28,7 @@ const beverages = [
   {
     itemCH: "",
     itemEN: "Ovaltine",
-    itemHot: "1.25",
+    itemHot: "-",
     itemSmall: "-",
     itemMedium: "-",
     itemCold: "2.50"

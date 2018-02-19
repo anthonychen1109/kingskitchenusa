@@ -4,17 +4,17 @@ const appetizers = [
   {
     itemCH: "",
     itemEN: "Two Choices of BBQ",
-    price: "6.50"
+    price: "6.00"
   },
   {
     itemCH: "",
     itemEN: "Three choices of BBQ",
-    price: "7.50"
+    price: "7.00"
   },
   {
     itemCH: "",
     itemEN: "Four Choices of BBQ",
-    price: "8.50"
+    price: "8.00"
   },
   {
     itemCH: "",

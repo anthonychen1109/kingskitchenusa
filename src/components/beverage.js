@@ -6,77 +6,77 @@ const beverages = [
     itemEN: "",
     itemSmall: "Small",
     itemMedium: "Medium",
-    itemLarge: "Large"
+    itemCold: "Cold"
   },
   {
     itemCH: "",
     itemEN: "Coffee",
     itemSmall: "1.50",
     itemMedium: "2.00",
-    itemLarge: "2.50"
+    itemCold: "2.50"
   },
   {
     itemCH: "",
     itemEN: "Tea with Milk",
     itemSmall: "1.50",
     itemMedium: "2.00",
-    itemLarge: "2.50"
+    itemCold: "2.50"
   },
   {
     itemCH: "",
     itemEN: "Lemon Tea",
     itemSmall: "1.50",
     itemMedium: "2.00",
-    itemLarge: "2.50"
+    itemCold: "2.50"
   },
   {
     itemCH: "",
     itemEN: "Lemon w. Honey",
     itemSmall: "1.50",
     itemMedium: "2.00",
-    itemLarge: "2.50"
+    itemCold: "2.50"
   },
   {
     itemCH: "",
     itemEN: "Pomelo Honey",
     itemSmall: "1.50",
     itemMedium: "2.00",
-    itemLarge: "2.50"
+    itemCold: "2.50"
   },
   {
     itemCH: "",
     itemEN: "Ginger w. Honey",
     itemSmall: "1.50",
     itemMedium: "2.00",
-    itemLarge: "2.50"
+    itemCold: "2.50"
   },
   {
     itemCH: "",
     itemEN: "Red Dates w. Honey",
     itemSmall: "1.50",
     itemMedium: "2.00",
-    itemLarge: "2.50"
+    itemCold: "2.50"
   },
   {
     itemCH: "",
     itemEN: "7-up w. Lemon",
     itemSmall: "-",
     itemMedium: "-",
-    itemLarge: "2.50"
+    itemCold: "2.50"
   },
   {
     itemCH: "",
     itemEN: "Coca Cola w. Lemon",
     itemSmall: "-",
     itemMedium: "-",
-    itemLarge: "2.50"
+    itemCold: "2.50"
   },
   {
     itemCH: "",
     itemEN: "Prunella",
     itemSmall: "-",
     itemMedium: "-",
-    itemLarge: "2.00"
+    itemCold: "2.00"
   }
 ]
 
@@ -90,7 +90,7 @@ const Beverage = () => {
             <div>{item.itemEN}</div>
             <div>{item.itemSmall}</div>
             <div>{item.itemMedium}</div>
-            <div>{item.itemLarge}</div>
+            <div>{item.itemCold}</div>
           </div>
         )
       })}

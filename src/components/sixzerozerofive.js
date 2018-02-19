@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 
 // Components
+import Navbar from './navbar';
 import Header from './header';
 import About from './about';
-import Menu from './menu';
+import Menu from './menu4/menu';
 import Gallery from './gallery';
 import Contact from './contact';
 
@@ -25,6 +26,24 @@ class Sixzerozerofive extends Component {
   render() {
     return (
       <div>
+        <nav className="fixed-navbar">
+          <ul id="dropDownClick" className="navbar-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="">Online Order</a></li>
+            <li className="nav-logo"><a href="/">King's Kitchen</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li className="dropDownIcon">
+              <a
+                href="javascript:void(0)"
+                onClick={this.dropDownMenu}
+                >
+                &#9776;
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <Navbar />
         <Header headerImage={header_image} />
         <About />
         <Menu />

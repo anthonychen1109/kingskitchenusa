@@ -44,7 +44,7 @@ const ricecasserole = [
   {
     itemCH: "",
     itemEN: "Eel",
-    price: "8.25"
+    price: "7.95"
   },
   {
     itemCH: "",
@@ -84,7 +84,7 @@ const ricecasserole = [
   {
     itemCH: "",
     itemEN: "Special Combo",
-    price: "9.95"
+    price: "8.95"
   }
 ]
 

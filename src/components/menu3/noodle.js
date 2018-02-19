@@ -55,11 +55,6 @@ const noodles = [
   {
     itemCH: "",
     itemEN: "Dumpling in Soup",
-    price: "6.25"
-  },
-  {
-    itemCH: "",
-    itemEN: "Fish Paste in Soup",
     price: "5.90"
   },
   {

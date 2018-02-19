@@ -4,32 +4,32 @@ const roasted = [
   {
     itemCH: "",
     itemEN: "3 Choices BBQ Combination on Rice",
-    price: "6.50"
+    price: "6.25"
   },
   {
     itemCH: "",
     itemEN: "Two Choices of BBQ on Rice",
-    price: "6.00"
+    price: "5.50"
   },
   {
     itemCH: "",
     itemEN: "Soy Sauce Chicken on Rice",
-    price: "5.00"
+    price: "4.75"
   },
   {
     itemCH: "",
     itemEN: "Roasted Pork on Rice",
-    price: "5.00"
+    price: "4.75"
   },
   {
     itemCH: "",
     itemEN: "Roasted Pig on Rice",
-    price: "5.00"
+    price: "4.75"
   },
   {
     itemCH: "",
     itemEN: "Roasted Duck on Rice",
-    price: "5.25"
+    price: "5.00"
   },
   {
     itemCH: "",

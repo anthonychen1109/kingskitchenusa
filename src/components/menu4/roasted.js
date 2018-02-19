@@ -29,12 +29,12 @@ const roasted = [
   {
     itemCH: "",
     itemEN: "Roasted Duck on Rice",
-    price: "5.25"
+    price: "5.00"
   },
   {
     itemCH: "",
     itemEN: "Cuttlefish on Rice",
-    price: "6.75"
+    price: "6.00"
   }
 ]
 
