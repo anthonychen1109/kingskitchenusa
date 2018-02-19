@@ -273,7 +273,7 @@
   .navbar {
     display: none; }
 
-  ul.navbar-list li:not(:nth-child(3)) {
+  ul.navbar-list li:not(:nth-child(4)) {
     display: none; }
   ul.navbar-list li.dropDownIcon {
     display: block;
@@ -291,7 +291,7 @@
     ul.responsive li {
       text-align: left;
       padding-left: 10px; }
-    ul.responsive li:nth-child(3) {
+    ul.responsive li:nth-child(4) {
       display: none; }
     ul.responsive .dropDownIcon {
       display: block;
