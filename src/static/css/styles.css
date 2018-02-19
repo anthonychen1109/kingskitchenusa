@@ -226,7 +226,7 @@
   opacity: .7; }
 
 .modal-img {
-  max-width: 300px; }
+  max-width: 100%; }
 
 .contact {
   background-image: url("../images/contactbg.jpg");
@@ -293,6 +293,9 @@
       right: 0; }
     ul.responsive a {
       color: black;
-      text-decoration: none; } }
+      text-decoration: none; }
+
+  .modal-img {
+    max-width: 300px; } }
 
 /*# sourceMappingURL=styles.css.map */
