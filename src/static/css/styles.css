@@ -2,6 +2,19 @@
   margin: 0;
   padding: 0; }
 
+.up-btn {
+  border: 1px solid black;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 5%;
+  z-index: 99999; }
+  .up-btn:hover {
+    cursor: pointer; }
+  @media only screen and (max-width: 800px) {
+    .up-btn {
+      margin: 0 5% 10% 0; } }
+
 .home {
   display: flex;
   flex-direction: column; }
@@ -273,7 +286,7 @@
   .navbar {
     display: none; }
 
-  ul.navbar-list li:not(:nth-child(4)) {
+  ul.navbar-list li:not(:nth-child(3)) {
     display: none; }
   ul.navbar-list li.dropDownIcon {
     display: block;
@@ -291,7 +304,7 @@
     ul.responsive li {
       text-align: left;
       padding-left: 10px; }
-    ul.responsive li:nth-child(4) {
+    ul.responsive li:nth-child(3) {
       display: none; }
     ul.responsive .dropDownIcon {
       display: block;
