@@ -37,21 +37,19 @@ $margin-top: 40px;
       background-size: cover;
       height: 50%;
       width: 50%;
-
       .overlay{
         position: relative;
         background-color:rgba(0,0,0,0.5);
         height:100%;
         width:100%;
         transition-duration: 0.2s;
+        &:hover {
+          background-color:rgba(0,0,0,0.0);
+        }
         div {
           text-align: center;
-          color:white !important;
+          color: white !important;
           @include center;
-        }
-        div:hover {
-          background-color:rgba(0,0,0,0.0);
-          cursor: pointer;
         }
       }
     }

@@ -23,6 +23,8 @@
         height: 100%;
         width: 100%;
         transition-duration: 0.2s; }
+        .home .home-top .store .overlay:hover, .home .home-bottom .store .overlay:hover {
+          background-color: rgba(0, 0, 0, 0); }
         .home .home-top .store .overlay div, .home .home-bottom .store .overlay div {
           text-align: center;
           color: white !important;
@@ -30,9 +32,6 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%); }
-        .home .home-top .store .overlay div:hover, .home .home-bottom .store .overlay div:hover {
-          background-color: rgba(0, 0, 0, 0);
-          cursor: pointer; }
 
 .fixed-navbar {
   display: none;
