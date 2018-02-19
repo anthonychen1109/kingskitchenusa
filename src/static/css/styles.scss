@@ -258,6 +258,15 @@ $margin-top: 40px;
   }
 }
 
+.item-grid-drink-2 {
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+  margin-top: 20px;
+  div:not(:first-child) {
+    text-align: right;
+  }
+}
+
 .item-price {
   text-align: right;
 }
@@ -282,6 +291,13 @@ $margin-top: 40px;
     @media only screen and (max-width: 800px) {
       padding: 1px;
     }
+  }
+}
+
+.gal-modal {
+  &:hover {
+    cursor: pointer;
+    opacity: .7;
   }
 }
 
@@ -334,7 +350,6 @@ $margin-top: 40px;
 }
 
 @media only screen and (max-width: 800px) {
-  @media only screen and (max-width: 800px) {
   .fixed-navbar {
     display: block;
   }
@@ -382,5 +397,4 @@ $margin-top: 40px;
       text-decoration: none;
     }
   }
-}
 }

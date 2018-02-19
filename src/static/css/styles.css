@@ -194,6 +194,13 @@
   .item-grid-drink div:not(:first-child) {
     text-align: right; }
 
+.item-grid-drink-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 20px; }
+  .item-grid-drink-2 div:not(:first-child) {
+    text-align: right; }
+
 .item-price {
   text-align: right; }
 
@@ -214,6 +221,10 @@
     @media only screen and (max-width: 800px) {
       .grid-item img {
         padding: 1px; } }
+
+.gal-modal:hover {
+  cursor: pointer;
+  opacity: .7; }
 
 .modal-img {
   max-width: 100%; }
@@ -248,7 +259,7 @@
   .contact-info div .hours {
     padding-bottom: 10px; }
 
-@media only screen and (max-width: 800px) and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
   .fixed-navbar {
     display: block; }
 
