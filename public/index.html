@@ -54,11 +54,13 @@
     </script>
     <script type="text/javascript">
       $(window).on('scroll', function() {
-      let y = $(this).scrollTop();
-      if (y > 20) {
-        $('.up-btn').css({ opacity: 1 });
-      } else {
+      let x = $(this).scrollTop();
+      console.log(x);
+      if (x === 0 || x < 100) {
         $('.up-btn').css({ opacity: 0 });
+      } else {
+        $('.up-btn').css({ opacity: 1 });
+        $('.up-btn').css("display", "block");
       }
       });
     </script>
